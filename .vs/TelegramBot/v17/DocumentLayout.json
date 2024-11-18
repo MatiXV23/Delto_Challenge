@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\matip\\OneDrive\\Escritorio\\Proyectos\\TelegramBot\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{14039B18-8A05-4F93-9766-9E6D0B830AE6}|TelegramBot.csproj|c:\\users\\matip\\onedrive\\escritorio\\proyectos\\telegrambot\\library\\bot\\telegrambot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14039B18-8A05-4F93-9766-9E6D0B830AE6}|TelegramBot.csproj|solutionrelative:library\\bot\\telegrambot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14039B18-8A05-4F93-9766-9E6D0B830AE6}|TelegramBot.csproj|c:\\users\\matip\\onedrive\\escritorio\\proyectos\\telegrambot\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14039B18-8A05-4F93-9766-9E6D0B830AE6}|TelegramBot.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14039B18-8A05-4F93-9766-9E6D0B830AE6}|TelegramBot.csproj|c:\\users\\matip\\onedrive\\escritorio\\proyectos\\telegrambot\\library\\bot\\configreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14039B18-8A05-4F93-9766-9E6D0B830AE6}|TelegramBot.csproj|solutionrelative:library\\bot\\configreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14039B18-8A05-4F93-9766-9E6D0B830AE6}|TelegramBot.csproj|c:\\users\\matip\\onedrive\\escritorio\\proyectos\\telegrambot\\library\\bot\\config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{14039B18-8A05-4F93-9766-9E6D0B830AE6}|TelegramBot.csproj|solutionrelative:library\\bot\\config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ConfigReader.cs",
+              "DocumentMoniker": "C:\\Users\\matip\\OneDrive\\Escritorio\\Proyectos\\TelegramBot\\Library\\Bot\\ConfigReader.cs",
+              "RelativeDocumentMoniker": "Library\\Bot\\ConfigReader.cs",
+              "ToolTip": "C:\\Users\\matip\\OneDrive\\Escritorio\\Proyectos\\TelegramBot\\Library\\Bot\\ConfigReader.cs",
+              "RelativeToolTip": "Library\\Bot\\ConfigReader.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T05:42:35.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "config.json",
+              "DocumentMoniker": "C:\\Users\\matip\\OneDrive\\Escritorio\\Proyectos\\TelegramBot\\Library\\Bot\\config.json",
+              "RelativeDocumentMoniker": "Library\\Bot\\config.json",
+              "ToolTip": "C:\\Users\\matip\\OneDrive\\Escritorio\\Proyectos\\TelegramBot\\Library\\Bot\\config.json",
+              "RelativeToolTip": "Library\\Bot\\config.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-18T05:40:11.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TelegramBot.cs",
+              "DocumentMoniker": "C:\\Users\\matip\\OneDrive\\Escritorio\\Proyectos\\TelegramBot\\Library\\Bot\\TelegramBot.cs",
+              "RelativeDocumentMoniker": "Library\\Bot\\TelegramBot.cs",
+              "ToolTip": "C:\\Users\\matip\\OneDrive\\Escritorio\\Proyectos\\TelegramBot\\Library\\Bot\\TelegramBot.cs",
+              "RelativeToolTip": "Library\\Bot\\TelegramBot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T19:16:17.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\matip\\OneDrive\\Escritorio\\Proyectos\\TelegramBot\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\matip\\OneDrive\\Escritorio\\Proyectos\\TelegramBot\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T19:05:16.146Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
