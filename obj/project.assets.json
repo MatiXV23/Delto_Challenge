@@ -741,11 +741,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\matip\\OneDrive\\Escritorio\\Proyectos\\DeltoChallenge\\TelegramBot.csproj",
+      "projectUniqueName": "C:\\Users\\matip\\OneDrive\\Escritorio\\Delto_Challenge\\TelegramBot.csproj",
       "projectName": "TelegramBot",
-      "projectPath": "C:\\Users\\matip\\OneDrive\\Escritorio\\Proyectos\\DeltoChallenge\\TelegramBot.csproj",
+      "projectPath": "C:\\Users\\matip\\OneDrive\\Escritorio\\Delto_Challenge\\TelegramBot.csproj",
       "packagesPath": "C:\\Users\\matip\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\matip\\OneDrive\\Escritorio\\Proyectos\\DeltoChallenge\\obj\\",
+      "outputPath": "C:\\Users\\matip\\OneDrive\\Escritorio\\Delto_Challenge\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

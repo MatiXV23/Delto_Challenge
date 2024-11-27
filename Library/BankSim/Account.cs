@@ -36,7 +36,7 @@ namespace TelegramBot.Library.BankSim
         /// <summary>
         /// Lista de transacciones asociadas a la tarjeta.
         /// </summary>
-        public List<Transaction> Transferences;
+        public List<Transaction> Moves;
 
         /// <summary>
         /// Genera un mensaje con informacion minima de cada una de sus tarjetas.
@@ -44,18 +44,18 @@ namespace TelegramBot.Library.BankSim
         /// <returns>
         /// Una cadena con los detalles de minimos de sus tarjetas.
         /// </returns>
-        private string GetTransferencesMSG()
+        private string GetTransferesMSG()
         {
             string msg = "";
-            foreach (Transaction transaction in Transferences)
+            foreach (Transaction transfer in Moves)
             {
-                if (transaction.PayeeAccountID == AccountID)
+                if (transfer.PayeeAccountID == AccountID)
                 {
-                    msg += $"({transaction.Date}){transaction.PayerAccountID} te ha transferido {transaction.Import} {transaction.Currency.ToString()}\n";
+                    msg += $"({transfer.Date}){transfer.PayerAccountID} te ha transferido {transfer.Import} {transfer.Currency.ToString()}\n";
                 }
                 else
                 {
-                    msg += $"({transaction.Date})Has transferido {transaction.Import} {transaction.Currency.ToString()} a {transaction.PayeeAccountID}\n";
+                    msg += $"({transfer.Date})Has transferido {transfer.Import} {transfer.Currency.ToString()} a {transfer.PayeeAccountID}\n";
                 }
             }
 
@@ -95,10 +95,10 @@ namespace TelegramBot.Library.BankSim
                 msg += $"{card.GetMovesMsg()}\n";
             }
 
-            if (Transferences != null && Transferences.Count > 0)
+            if (Moves != null && Moves.Count > 0)
             {
                 msg += "Transferencias: \n";
-                msg += GetTransferencesMSG() + "\n";
+                msg += GetTransferesMSG() + "\n";
             }
             
 
