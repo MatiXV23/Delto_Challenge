@@ -1,0 +1,61 @@
+\doxysection{Telegram\+Bot.\+Library.\+Bank\+Sim.\+Bank Class Reference}
+\hypertarget{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank}{}\label{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank}\index{TelegramBot.Library.BankSim.Bank@{TelegramBot.Library.BankSim.Bank}}
+
+
+Clase que representa el Banco.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank_user}{Bank\+User}} \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank_aff4d6463988772ffa95aaf9dccde7560}{Get\+User\+By\+Credentials}} (string username, string password)
+\begin{DoxyCompactList}\small\item\em Obtiene un usuario del banco a partir de credenciales. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank_user}{Bank\+User}} $>$ \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank_a0ef86a2a51c18540b5dbd137a0cfea9f}{users}} = Json\+Adapter.\+Get\+Users\+From\+DB()
+\begin{DoxyCompactList}\small\item\em Lista de usuarios registrados en el banco. Realiza una llamada a la base de datos del banco para obtenerlos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase que representa el Banco. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank_aff4d6463988772ffa95aaf9dccde7560}\index{TelegramBot.Library.BankSim.Bank@{TelegramBot.Library.BankSim.Bank}!GetUserByCredentials@{GetUserByCredentials}}
+\index{GetUserByCredentials@{GetUserByCredentials}!TelegramBot.Library.BankSim.Bank@{TelegramBot.Library.BankSim.Bank}}
+\doxysubsubsection{\texorpdfstring{GetUserByCredentials()}{GetUserByCredentials()}}
+{\footnotesize\ttfamily \label{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank_aff4d6463988772ffa95aaf9dccde7560} 
+\mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank_user}{Bank\+User}} Telegram\+Bot.\+Library.\+Bank\+Sim.\+Bank.\+Get\+User\+By\+Credentials (\begin{DoxyParamCaption}\item[{string}]{username}{, }\item[{string}]{password}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene un usuario del banco a partir de credenciales. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & El nombre de usuario.\\
+\hline
+{\em password} & La contraseña.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+El usuario con las respectivas credenciales. En su defecto null. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank_a0ef86a2a51c18540b5dbd137a0cfea9f}\index{TelegramBot.Library.BankSim.Bank@{TelegramBot.Library.BankSim.Bank}!users@{users}}
+\index{users@{users}!TelegramBot.Library.BankSim.Bank@{TelegramBot.Library.BankSim.Bank}}
+\doxysubsubsection{\texorpdfstring{users}{users}}
+{\footnotesize\ttfamily \label{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank_a0ef86a2a51c18540b5dbd137a0cfea9f} 
+List$<$\mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank_user}{Bank\+User}}$>$ Telegram\+Bot.\+Library.\+Bank\+Sim.\+Bank.\+users = Json\+Adapter.\+Get\+Users\+From\+DB()}
+
+
+
+Lista de usuarios registrados en el banco. Realiza una llamada a la base de datos del banco para obtenerlos. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Library/\+Bank\+Sim/\mbox{\hyperlink{_bank_8cs}{Bank.\+cs}}\end{DoxyCompactItemize}

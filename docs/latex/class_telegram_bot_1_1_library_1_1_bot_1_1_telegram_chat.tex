@@ -1,0 +1,163 @@
+\doxysection{Telegram\+Bot.\+Library.\+Bot.\+Telegram\+Chat Class Reference}
+\hypertarget{class_telegram_bot_1_1_library_1_1_bot_1_1_telegram_chat}{}\label{class_telegram_bot_1_1_library_1_1_bot_1_1_telegram_chat}\index{TelegramBot.Library.Bot.TelegramChat@{TelegramBot.Library.Bot.TelegramChat}}
+
+
+Clase que representa un chat individual en Telegram.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bot_1_1_telegram_chat_a079b039277705232da0e138c48963ef4}{Telegram\+Chat}} (Chat \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bot_1_1_telegram_chat_a43b88e6c8c17048317e4ebfa04c3b2bb}{chat}}, Telegram\+Bot\+Client bot\+Client)
+\begin{DoxyCompactList}\small\item\em Inicializa una nueva instancia de la clase \doxylink{class_telegram_bot_1_1_library_1_1_bot_1_1_telegram_chat}{Telegram\+Chat}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bot_1_1_telegram_chat_a9ebc3184cd86593f659ec72f6caabce1}{Try\+To\+Log\+In}} ()
+\begin{DoxyCompactList}\small\item\em Intenta iniciar sesión con las credenciales ingresadas. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bot_1_1_telegram_chat_ac8621c30b136ee0958d2f0d3c9ce664f}{Initial\+Msg}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el mensaje inicial de bienvenida. \end{DoxyCompactList}\item 
+async Task \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bot_1_1_telegram_chat_ac1bb482ded8fd651ee83aa9140108702}{On\+Message}} (Message msg, Update\+Type type)
+\begin{DoxyCompactList}\small\item\em Maneja los mensajes entrantes del usuario en el chat. \end{DoxyCompactList}\item 
+async Task \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bot_1_1_telegram_chat_a0a58c48ae6938845b5d75698a28e698c}{On\+Update}} (Callback\+Query query)
+\begin{DoxyCompactList}\small\item\em Maneja las actualizaciones recibidas del bot de Telegram. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+long \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bot_1_1_telegram_chat_aa0e8b6c5a625a5c9ab77e2a73cd6b5d7}{Id}}
+\begin{DoxyCompactList}\small\item\em ID único del chat de Telegram. \end{DoxyCompactList}\item 
+Chat \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bot_1_1_telegram_chat_a43b88e6c8c17048317e4ebfa04c3b2bb}{chat}}
+\begin{DoxyCompactList}\small\item\em Objeto Chat de Telegram que representa el chat actual. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank}{Bank}} \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bot_1_1_telegram_chat_aab0f8c300fca211d2546bc5c3fdc44f2}{commands}} = new \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank}{Bank}}()
+\begin{DoxyCompactList}\small\item\em Comandos bancarios disponibles para interactuar con el sistema. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bot_1_1_telegram_chat_a5279de5ee26f205abc17c0cc05a03630}{Trying\+To\+Log\+In}} = false
+\begin{DoxyCompactList}\small\item\em Indica si el usuario está intentando iniciar sesión. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase que representa un chat individual en Telegram. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_telegram_bot_1_1_library_1_1_bot_1_1_telegram_chat_a079b039277705232da0e138c48963ef4}\index{TelegramBot.Library.Bot.TelegramChat@{TelegramBot.Library.Bot.TelegramChat}!TelegramChat@{TelegramChat}}
+\index{TelegramChat@{TelegramChat}!TelegramBot.Library.Bot.TelegramChat@{TelegramBot.Library.Bot.TelegramChat}}
+\doxysubsubsection{\texorpdfstring{TelegramChat()}{TelegramChat()}}
+{\footnotesize\ttfamily \label{class_telegram_bot_1_1_library_1_1_bot_1_1_telegram_chat_a079b039277705232da0e138c48963ef4} 
+Telegram\+Bot.\+Library.\+Bot.\+Telegram\+Chat.\+Telegram\+Chat (\begin{DoxyParamCaption}\item[{Chat}]{chat}{, }\item[{Telegram\+Bot\+Client}]{bot\+Client}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicializa una nueva instancia de la clase \doxylink{class_telegram_bot_1_1_library_1_1_bot_1_1_telegram_chat}{Telegram\+Chat}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em chat} & El chat de Telegram asociado.\\
+\hline
+{\em bot\+Client} & El cliente del bot de Telegram.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_telegram_bot_1_1_library_1_1_bot_1_1_telegram_chat_ac8621c30b136ee0958d2f0d3c9ce664f}\index{TelegramBot.Library.Bot.TelegramChat@{TelegramBot.Library.Bot.TelegramChat}!InitialMsg@{InitialMsg}}
+\index{InitialMsg@{InitialMsg}!TelegramBot.Library.Bot.TelegramChat@{TelegramBot.Library.Bot.TelegramChat}}
+\doxysubsubsection{\texorpdfstring{InitialMsg()}{InitialMsg()}}
+{\footnotesize\ttfamily \label{class_telegram_bot_1_1_library_1_1_bot_1_1_telegram_chat_ac8621c30b136ee0958d2f0d3c9ce664f} 
+string Telegram\+Bot.\+Library.\+Bot.\+Telegram\+Chat.\+Initial\+Msg (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Devuelve el mensaje inicial de bienvenida. 
+
+\begin{DoxyReturn}{Returns}
+Mensaje de bienvenida. 
+\end{DoxyReturn}
+\Hypertarget{class_telegram_bot_1_1_library_1_1_bot_1_1_telegram_chat_ac1bb482ded8fd651ee83aa9140108702}\index{TelegramBot.Library.Bot.TelegramChat@{TelegramBot.Library.Bot.TelegramChat}!OnMessage@{OnMessage}}
+\index{OnMessage@{OnMessage}!TelegramBot.Library.Bot.TelegramChat@{TelegramBot.Library.Bot.TelegramChat}}
+\doxysubsubsection{\texorpdfstring{OnMessage()}{OnMessage()}}
+{\footnotesize\ttfamily \label{class_telegram_bot_1_1_library_1_1_bot_1_1_telegram_chat_ac1bb482ded8fd651ee83aa9140108702} 
+async Task Telegram\+Bot.\+Library.\+Bot.\+Telegram\+Chat.\+On\+Message (\begin{DoxyParamCaption}\item[{Message}]{msg}{, }\item[{Update\+Type}]{type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Maneja los mensajes entrantes del usuario en el chat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & El mensaje recibido.\\
+\hline
+{\em type} & El tipo de actualización correspondiente.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_telegram_bot_1_1_library_1_1_bot_1_1_telegram_chat_a0a58c48ae6938845b5d75698a28e698c}\index{TelegramBot.Library.Bot.TelegramChat@{TelegramBot.Library.Bot.TelegramChat}!OnUpdate@{OnUpdate}}
+\index{OnUpdate@{OnUpdate}!TelegramBot.Library.Bot.TelegramChat@{TelegramBot.Library.Bot.TelegramChat}}
+\doxysubsubsection{\texorpdfstring{OnUpdate()}{OnUpdate()}}
+{\footnotesize\ttfamily \label{class_telegram_bot_1_1_library_1_1_bot_1_1_telegram_chat_a0a58c48ae6938845b5d75698a28e698c} 
+async Task Telegram\+Bot.\+Library.\+Bot.\+Telegram\+Chat.\+On\+Update (\begin{DoxyParamCaption}\item[{Callback\+Query}]{query}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Maneja las actualizaciones recibidas del bot de Telegram. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & La consulta de callback recibida.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_telegram_bot_1_1_library_1_1_bot_1_1_telegram_chat_a9ebc3184cd86593f659ec72f6caabce1}\index{TelegramBot.Library.Bot.TelegramChat@{TelegramBot.Library.Bot.TelegramChat}!TryToLogIn@{TryToLogIn}}
+\index{TryToLogIn@{TryToLogIn}!TelegramBot.Library.Bot.TelegramChat@{TelegramBot.Library.Bot.TelegramChat}}
+\doxysubsubsection{\texorpdfstring{TryToLogIn()}{TryToLogIn()}}
+{\footnotesize\ttfamily \label{class_telegram_bot_1_1_library_1_1_bot_1_1_telegram_chat_a9ebc3184cd86593f659ec72f6caabce1} 
+string Telegram\+Bot.\+Library.\+Bot.\+Telegram\+Chat.\+Try\+To\+Log\+In (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Intenta iniciar sesión con las credenciales ingresadas. 
+
+\begin{DoxyReturn}{Returns}
+Un mensaje que indica si el inicio de sesión fue exitoso o fallido. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_telegram_bot_1_1_library_1_1_bot_1_1_telegram_chat_a43b88e6c8c17048317e4ebfa04c3b2bb}\index{TelegramBot.Library.Bot.TelegramChat@{TelegramBot.Library.Bot.TelegramChat}!chat@{chat}}
+\index{chat@{chat}!TelegramBot.Library.Bot.TelegramChat@{TelegramBot.Library.Bot.TelegramChat}}
+\doxysubsubsection{\texorpdfstring{chat}{chat}}
+{\footnotesize\ttfamily \label{class_telegram_bot_1_1_library_1_1_bot_1_1_telegram_chat_a43b88e6c8c17048317e4ebfa04c3b2bb} 
+Chat Telegram\+Bot.\+Library.\+Bot.\+Telegram\+Chat.\+chat}
+
+
+
+Objeto Chat de Telegram que representa el chat actual. 
+
+\Hypertarget{class_telegram_bot_1_1_library_1_1_bot_1_1_telegram_chat_aab0f8c300fca211d2546bc5c3fdc44f2}\index{TelegramBot.Library.Bot.TelegramChat@{TelegramBot.Library.Bot.TelegramChat}!commands@{commands}}
+\index{commands@{commands}!TelegramBot.Library.Bot.TelegramChat@{TelegramBot.Library.Bot.TelegramChat}}
+\doxysubsubsection{\texorpdfstring{commands}{commands}}
+{\footnotesize\ttfamily \label{class_telegram_bot_1_1_library_1_1_bot_1_1_telegram_chat_aab0f8c300fca211d2546bc5c3fdc44f2} 
+\mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank}{Bank}} Telegram\+Bot.\+Library.\+Bot.\+Telegram\+Chat.\+commands = new \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank}{Bank}}()}
+
+
+
+Comandos bancarios disponibles para interactuar con el sistema. 
+
+\Hypertarget{class_telegram_bot_1_1_library_1_1_bot_1_1_telegram_chat_aa0e8b6c5a625a5c9ab77e2a73cd6b5d7}\index{TelegramBot.Library.Bot.TelegramChat@{TelegramBot.Library.Bot.TelegramChat}!Id@{Id}}
+\index{Id@{Id}!TelegramBot.Library.Bot.TelegramChat@{TelegramBot.Library.Bot.TelegramChat}}
+\doxysubsubsection{\texorpdfstring{Id}{Id}}
+{\footnotesize\ttfamily \label{class_telegram_bot_1_1_library_1_1_bot_1_1_telegram_chat_aa0e8b6c5a625a5c9ab77e2a73cd6b5d7} 
+long Telegram\+Bot.\+Library.\+Bot.\+Telegram\+Chat.\+Id}
+
+
+
+ID único del chat de Telegram. 
+
+\Hypertarget{class_telegram_bot_1_1_library_1_1_bot_1_1_telegram_chat_a5279de5ee26f205abc17c0cc05a03630}\index{TelegramBot.Library.Bot.TelegramChat@{TelegramBot.Library.Bot.TelegramChat}!TryingToLogIn@{TryingToLogIn}}
+\index{TryingToLogIn@{TryingToLogIn}!TelegramBot.Library.Bot.TelegramChat@{TelegramBot.Library.Bot.TelegramChat}}
+\doxysubsubsection{\texorpdfstring{TryingToLogIn}{TryingToLogIn}}
+{\footnotesize\ttfamily \label{class_telegram_bot_1_1_library_1_1_bot_1_1_telegram_chat_a5279de5ee26f205abc17c0cc05a03630} 
+bool Telegram\+Bot.\+Library.\+Bot.\+Telegram\+Chat.\+Trying\+To\+Log\+In = false}
+
+
+
+Indica si el usuario está intentando iniciar sesión. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Library/\+Bot/\mbox{\hyperlink{_telegram_chat_8cs}{Telegram\+Chat.\+cs}}\end{DoxyCompactItemize}

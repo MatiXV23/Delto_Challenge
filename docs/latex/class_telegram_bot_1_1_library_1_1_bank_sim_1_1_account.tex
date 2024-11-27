@@ -1,0 +1,139 @@
+\doxysection{Telegram\+Bot.\+Library.\+Bank\+Sim.\+Account Class Reference}
+\hypertarget{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_account}{}\label{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_account}\index{TelegramBot.Library.BankSim.Account@{TelegramBot.Library.BankSim.Account}}
+
+
+Clase que representa una cuenta bancaria.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_account_a04ff152dd589a9e0e4c83f9a30d6c82c}{Get\+Cards\+List\+Msg}} ()
+\begin{DoxyCompactList}\small\item\em Genera un mensaje con informacion minima de cada una de sus tarjetas. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_account_ac2109773162da5ef9929a836e9ebab47}{Get\+All\+Account\+Moves\+Msg}} ()
+\begin{DoxyCompactList}\small\item\em Genera un mensaje con todos los movimientos de la cuenta. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_account_a03da81cc2800b9d606c94b1b790881ec}{Is\+An\+Card\+Number}} (string msg, out \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_card}{Card}} card)
+\begin{DoxyCompactList}\small\item\em Verifica si el mensaje recive es un Identificador de alguna de las tarjetas del usuario. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_account_aee1de4c4347c133a3799d506053df901}{Balance}}
+\begin{DoxyCompactList}\small\item\em Numero que representa el balance de la cuenta. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_account_ad4e13108254d0bf9e78a9b6fe18425b2}{Account\+ID}}
+\begin{DoxyCompactList}\small\item\em Identificador de la cuenta. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_telegram_bot_1_1_library_1_1_bank_sim_afa9e7ccd1375d0336562e508a25aff26}{ECurrency}} \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_account_a2511db3559ed2072c7e42894be85f225}{Currency}}
+\begin{DoxyCompactList}\small\item\em Enum que representa los tipo de moneda de la cuenta. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_card}{Card}} $>$ \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_account_ad9b2f1fd910e7c98f318c3df131a01f2}{Cards}}
+\begin{DoxyCompactList}\small\item\em Lista de tarjetas asociadas a la cuenta. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_transaction}{Transaction}} $>$ \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_account_a75ef66b11bd7cf2b45bbacb9f5996a15}{Transferences}}
+\begin{DoxyCompactList}\small\item\em Lista de transacciones asociadas a la tarjeta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase que representa una cuenta bancaria. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_account_ac2109773162da5ef9929a836e9ebab47}\index{TelegramBot.Library.BankSim.Account@{TelegramBot.Library.BankSim.Account}!GetAllAccountMovesMsg@{GetAllAccountMovesMsg}}
+\index{GetAllAccountMovesMsg@{GetAllAccountMovesMsg}!TelegramBot.Library.BankSim.Account@{TelegramBot.Library.BankSim.Account}}
+\doxysubsubsection{\texorpdfstring{GetAllAccountMovesMsg()}{GetAllAccountMovesMsg()}}
+{\footnotesize\ttfamily \label{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_account_ac2109773162da5ef9929a836e9ebab47} 
+string Telegram\+Bot.\+Library.\+Bank\+Sim.\+Account.\+Get\+All\+Account\+Moves\+Msg (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Genera un mensaje con todos los movimientos de la cuenta. 
+
+\begin{DoxyReturn}{Returns}
+Una cadena con los detalles de todas las transacciones de la cuenta. 
+\end{DoxyReturn}
+\Hypertarget{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_account_a04ff152dd589a9e0e4c83f9a30d6c82c}\index{TelegramBot.Library.BankSim.Account@{TelegramBot.Library.BankSim.Account}!GetCardsListMsg@{GetCardsListMsg}}
+\index{GetCardsListMsg@{GetCardsListMsg}!TelegramBot.Library.BankSim.Account@{TelegramBot.Library.BankSim.Account}}
+\doxysubsubsection{\texorpdfstring{GetCardsListMsg()}{GetCardsListMsg()}}
+{\footnotesize\ttfamily \label{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_account_a04ff152dd589a9e0e4c83f9a30d6c82c} 
+string Telegram\+Bot.\+Library.\+Bank\+Sim.\+Account.\+Get\+Cards\+List\+Msg (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Genera un mensaje con informacion minima de cada una de sus tarjetas. 
+
+\begin{DoxyReturn}{Returns}
+Una cadena con los detalles de minimos de sus tarjetas. 
+\end{DoxyReturn}
+\Hypertarget{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_account_a03da81cc2800b9d606c94b1b790881ec}\index{TelegramBot.Library.BankSim.Account@{TelegramBot.Library.BankSim.Account}!IsAnCardNumber@{IsAnCardNumber}}
+\index{IsAnCardNumber@{IsAnCardNumber}!TelegramBot.Library.BankSim.Account@{TelegramBot.Library.BankSim.Account}}
+\doxysubsubsection{\texorpdfstring{IsAnCardNumber()}{IsAnCardNumber()}}
+{\footnotesize\ttfamily \label{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_account_a03da81cc2800b9d606c94b1b790881ec} 
+bool Telegram\+Bot.\+Library.\+Bank\+Sim.\+Account.\+Is\+An\+Card\+Number (\begin{DoxyParamCaption}\item[{string}]{msg}{, }\item[{out \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_card}{Card}}}]{card}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Verifica si el mensaje recive es un Identificador de alguna de las tarjetas del usuario. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & El mensaje recibido.\\
+\hline
+{\em card} & Parametro de salida con la instancia de la tarjeta obtenida.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un boolean que indica si el mensaje es un ID de alguna de las tarjetas del usuario o no 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_account_ad4e13108254d0bf9e78a9b6fe18425b2}\index{TelegramBot.Library.BankSim.Account@{TelegramBot.Library.BankSim.Account}!AccountID@{AccountID}}
+\index{AccountID@{AccountID}!TelegramBot.Library.BankSim.Account@{TelegramBot.Library.BankSim.Account}}
+\doxysubsubsection{\texorpdfstring{AccountID}{AccountID}}
+{\footnotesize\ttfamily \label{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_account_ad4e13108254d0bf9e78a9b6fe18425b2} 
+string Telegram\+Bot.\+Library.\+Bank\+Sim.\+Account.\+Account\+ID}
+
+
+
+Identificador de la cuenta. 
+
+\Hypertarget{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_account_aee1de4c4347c133a3799d506053df901}\index{TelegramBot.Library.BankSim.Account@{TelegramBot.Library.BankSim.Account}!Balance@{Balance}}
+\index{Balance@{Balance}!TelegramBot.Library.BankSim.Account@{TelegramBot.Library.BankSim.Account}}
+\doxysubsubsection{\texorpdfstring{Balance}{Balance}}
+{\footnotesize\ttfamily \label{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_account_aee1de4c4347c133a3799d506053df901} 
+float Telegram\+Bot.\+Library.\+Bank\+Sim.\+Account.\+Balance}
+
+
+
+Numero que representa el balance de la cuenta. 
+
+\Hypertarget{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_account_ad9b2f1fd910e7c98f318c3df131a01f2}\index{TelegramBot.Library.BankSim.Account@{TelegramBot.Library.BankSim.Account}!Cards@{Cards}}
+\index{Cards@{Cards}!TelegramBot.Library.BankSim.Account@{TelegramBot.Library.BankSim.Account}}
+\doxysubsubsection{\texorpdfstring{Cards}{Cards}}
+{\footnotesize\ttfamily \label{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_account_ad9b2f1fd910e7c98f318c3df131a01f2} 
+List$<$\mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_card}{Card}}$>$ Telegram\+Bot.\+Library.\+Bank\+Sim.\+Account.\+Cards}
+
+
+
+Lista de tarjetas asociadas a la cuenta. 
+
+\Hypertarget{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_account_a2511db3559ed2072c7e42894be85f225}\index{TelegramBot.Library.BankSim.Account@{TelegramBot.Library.BankSim.Account}!Currency@{Currency}}
+\index{Currency@{Currency}!TelegramBot.Library.BankSim.Account@{TelegramBot.Library.BankSim.Account}}
+\doxysubsubsection{\texorpdfstring{Currency}{Currency}}
+{\footnotesize\ttfamily \label{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_account_a2511db3559ed2072c7e42894be85f225} 
+\mbox{\hyperlink{namespace_telegram_bot_1_1_library_1_1_bank_sim_afa9e7ccd1375d0336562e508a25aff26}{ECurrency}} Telegram\+Bot.\+Library.\+Bank\+Sim.\+Account.\+Currency}
+
+
+
+Enum que representa los tipo de moneda de la cuenta. 
+
+\Hypertarget{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_account_a75ef66b11bd7cf2b45bbacb9f5996a15}\index{TelegramBot.Library.BankSim.Account@{TelegramBot.Library.BankSim.Account}!Transferences@{Transferences}}
+\index{Transferences@{Transferences}!TelegramBot.Library.BankSim.Account@{TelegramBot.Library.BankSim.Account}}
+\doxysubsubsection{\texorpdfstring{Transferences}{Transferences}}
+{\footnotesize\ttfamily \label{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_account_a75ef66b11bd7cf2b45bbacb9f5996a15} 
+List$<$\mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_transaction}{Transaction}}$>$ Telegram\+Bot.\+Library.\+Bank\+Sim.\+Account.\+Transferences}
+
+
+
+Lista de transacciones asociadas a la tarjeta. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Library/\+Bank\+Sim/\mbox{\hyperlink{_account_8cs}{Account.\+cs}}\end{DoxyCompactItemize}

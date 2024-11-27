@@ -1,0 +1,127 @@
+\doxysection{Telegram\+Bot.\+Library.\+Bank\+Sim.\+Bank\+User Class Reference}
+\hypertarget{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank_user}{}\label{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank_user}\index{TelegramBot.Library.BankSim.BankUser@{TelegramBot.Library.BankSim.BankUser}}
+
+
+Clase que representa un usuario bancario.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank_user_a0ef529ba7971b5207fcef352b9b5a07d}{Get\+Account\+List\+Msg}} ()
+\begin{DoxyCompactList}\small\item\em Genera un mensaje con informacion minima de cada una de sus cuentas. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank_user_a1b1ae3ee39f7d3306c5e83001e08f371}{Get\+All\+Moves\+Msg}} ()
+\begin{DoxyCompactList}\small\item\em Genera un mensaje con todos los movimientos del usuario. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank_user_abfbd34dd2ea95ed0c24a2c6ba51c2b01}{Is\+An\+Account\+Id}} (string msg, out \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_account}{Account}} account)
+\begin{DoxyCompactList}\small\item\em Verifica si el mensaje recive es un Identificador de alguna de las cuentas del usuario. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank_user_a1d0969a11e9e35de38ff6fe1925b6e17}{Name}}
+\begin{DoxyCompactList}\small\item\em Nombre del propietario. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank_user_aee4ec67c9546bc8da5b54c4f4c6ab18b}{Username}}
+\begin{DoxyCompactList}\small\item\em Nombre de usuario del propietario. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank_user_a3e61bdb2dbb9cdc47e179b958876c49b}{Password}}
+\begin{DoxyCompactList}\small\item\em Contraseña del propietario. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_account}{Account}} $>$ \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank_user_aa3643fb973cb9a9e6aed2f2129141f4d}{Accounts}}
+\begin{DoxyCompactList}\small\item\em Lista de cuentas pertenecientes al propietario. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase que representa un usuario bancario. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank_user_a0ef529ba7971b5207fcef352b9b5a07d}\index{TelegramBot.Library.BankSim.BankUser@{TelegramBot.Library.BankSim.BankUser}!GetAccountListMsg@{GetAccountListMsg}}
+\index{GetAccountListMsg@{GetAccountListMsg}!TelegramBot.Library.BankSim.BankUser@{TelegramBot.Library.BankSim.BankUser}}
+\doxysubsubsection{\texorpdfstring{GetAccountListMsg()}{GetAccountListMsg()}}
+{\footnotesize\ttfamily \label{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank_user_a0ef529ba7971b5207fcef352b9b5a07d} 
+string Telegram\+Bot.\+Library.\+Bank\+Sim.\+Bank\+User.\+Get\+Account\+List\+Msg (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Genera un mensaje con informacion minima de cada una de sus cuentas. 
+
+\begin{DoxyReturn}{Returns}
+Una cadena con los detalles de minimos de sus cuentas.
+\end{DoxyReturn}
+\Hypertarget{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank_user_a1b1ae3ee39f7d3306c5e83001e08f371}\index{TelegramBot.Library.BankSim.BankUser@{TelegramBot.Library.BankSim.BankUser}!GetAllMovesMsg@{GetAllMovesMsg}}
+\index{GetAllMovesMsg@{GetAllMovesMsg}!TelegramBot.Library.BankSim.BankUser@{TelegramBot.Library.BankSim.BankUser}}
+\doxysubsubsection{\texorpdfstring{GetAllMovesMsg()}{GetAllMovesMsg()}}
+{\footnotesize\ttfamily \label{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank_user_a1b1ae3ee39f7d3306c5e83001e08f371} 
+string Telegram\+Bot.\+Library.\+Bank\+Sim.\+Bank\+User.\+Get\+All\+Moves\+Msg (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Genera un mensaje con todos los movimientos del usuario. 
+
+\begin{DoxyReturn}{Returns}
+Una cadena con los detalles de todas las transacciones del usuario.
+\end{DoxyReturn}
+\Hypertarget{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank_user_abfbd34dd2ea95ed0c24a2c6ba51c2b01}\index{TelegramBot.Library.BankSim.BankUser@{TelegramBot.Library.BankSim.BankUser}!IsAnAccountId@{IsAnAccountId}}
+\index{IsAnAccountId@{IsAnAccountId}!TelegramBot.Library.BankSim.BankUser@{TelegramBot.Library.BankSim.BankUser}}
+\doxysubsubsection{\texorpdfstring{IsAnAccountId()}{IsAnAccountId()}}
+{\footnotesize\ttfamily \label{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank_user_abfbd34dd2ea95ed0c24a2c6ba51c2b01} 
+bool Telegram\+Bot.\+Library.\+Bank\+Sim.\+Bank\+User.\+Is\+An\+Account\+Id (\begin{DoxyParamCaption}\item[{string}]{msg}{, }\item[{out \mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_account}{Account}}}]{account}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Verifica si el mensaje recive es un Identificador de alguna de las cuentas del usuario. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & El mensaje recibido.\\
+\hline
+{\em account} & Parametro de salida con la instancia de la cuenta obtenida.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un boolean que indica si el mensaje es un ID de alguna de las cuentas del usuario o no 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank_user_aa3643fb973cb9a9e6aed2f2129141f4d}\index{TelegramBot.Library.BankSim.BankUser@{TelegramBot.Library.BankSim.BankUser}!Accounts@{Accounts}}
+\index{Accounts@{Accounts}!TelegramBot.Library.BankSim.BankUser@{TelegramBot.Library.BankSim.BankUser}}
+\doxysubsubsection{\texorpdfstring{Accounts}{Accounts}}
+{\footnotesize\ttfamily \label{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank_user_aa3643fb973cb9a9e6aed2f2129141f4d} 
+List$<$\mbox{\hyperlink{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_account}{Account}}$>$ Telegram\+Bot.\+Library.\+Bank\+Sim.\+Bank\+User.\+Accounts}
+
+
+
+Lista de cuentas pertenecientes al propietario. 
+
+\Hypertarget{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank_user_a1d0969a11e9e35de38ff6fe1925b6e17}\index{TelegramBot.Library.BankSim.BankUser@{TelegramBot.Library.BankSim.BankUser}!Name@{Name}}
+\index{Name@{Name}!TelegramBot.Library.BankSim.BankUser@{TelegramBot.Library.BankSim.BankUser}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily \label{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank_user_a1d0969a11e9e35de38ff6fe1925b6e17} 
+string Telegram\+Bot.\+Library.\+Bank\+Sim.\+Bank\+User.\+Name}
+
+
+
+Nombre del propietario. 
+
+\Hypertarget{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank_user_a3e61bdb2dbb9cdc47e179b958876c49b}\index{TelegramBot.Library.BankSim.BankUser@{TelegramBot.Library.BankSim.BankUser}!Password@{Password}}
+\index{Password@{Password}!TelegramBot.Library.BankSim.BankUser@{TelegramBot.Library.BankSim.BankUser}}
+\doxysubsubsection{\texorpdfstring{Password}{Password}}
+{\footnotesize\ttfamily \label{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank_user_a3e61bdb2dbb9cdc47e179b958876c49b} 
+string Telegram\+Bot.\+Library.\+Bank\+Sim.\+Bank\+User.\+Password}
+
+
+
+Contraseña del propietario. 
+
+\Hypertarget{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank_user_aee4ec67c9546bc8da5b54c4f4c6ab18b}\index{TelegramBot.Library.BankSim.BankUser@{TelegramBot.Library.BankSim.BankUser}!Username@{Username}}
+\index{Username@{Username}!TelegramBot.Library.BankSim.BankUser@{TelegramBot.Library.BankSim.BankUser}}
+\doxysubsubsection{\texorpdfstring{Username}{Username}}
+{\footnotesize\ttfamily \label{class_telegram_bot_1_1_library_1_1_bank_sim_1_1_bank_user_aee4ec67c9546bc8da5b54c4f4c6ab18b} 
+string Telegram\+Bot.\+Library.\+Bank\+Sim.\+Bank\+User.\+Username}
+
+
+
+Nombre de usuario del propietario. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Library/\+Bank\+Sim/\mbox{\hyperlink{_bank_user_8cs}{Bank\+User.\+cs}}\end{DoxyCompactItemize}
