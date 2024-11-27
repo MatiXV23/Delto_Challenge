@@ -6,14 +6,34 @@ using System.Threading.Tasks;
 
 namespace TelegramBot.Library.BankSim
 {
+    /// <summary>
+    /// Representa una transacción bancaria entre dos cuentas.
+    /// </summary>
     public class Transaction
     {
+        /// <summary>
+        /// Identificador de la cuenta del pagador.
+        /// </summary>
         public string PayerAccountID;
-        public string PayeeAccountID;
-        public float Import;
-        public string Date;
-        public CurrencyEnum Currency;
 
-        
+        /// <summary>
+        /// Identificador de la cuenta del receptor (beneficiario).
+        /// </summary>
+        public string PayeeAccountID;
+
+        /// <summary>
+        /// Monto de la transacción.
+        /// </summary>
+        public float Import;
+
+        /// <summary>
+        /// Fecha en la que se realizó la transacción.
+        /// </summary>
+        public string Date;
+
+        /// <summary>
+        /// Moneda utilizada en la transacción.
+        /// </summary>
+        public ECurrency Currency;
     }
 }

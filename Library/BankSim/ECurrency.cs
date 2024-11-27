@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace TelegramBot.Library.BankSim
 {
-    public enum CurrencyEnum
+    /// <summary>
+    /// Enum que representa los tipos de moneda admitidos por el sistema bancario.
+    /// </summary>
+    public enum ECurrency
     {
         Pesos,
         Dollars,

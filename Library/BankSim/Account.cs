@@ -8,19 +8,46 @@ using Telegram.Bot.Requests;
 
 namespace TelegramBot.Library.BankSim
 {
+    /// <summary>
+    /// Clase que representa una cuenta bancaria.
+    /// </summary>
     public class Account
     {
+        /// <summary>
+        /// Numero que representa el balance de la cuenta.
+        /// </summary>
         public float Balance;
+
+        /// <summary>
+        /// Identificador de la cuenta.
+        /// </summary>
         public string AccountID;
-        public CurrencyEnum Currency;
+
+        /// <summary>
+        /// Enum que representa los tipo de moneda de la cuenta.
+        /// </summary>
+        public ECurrency Currency;
+
+        /// <summary>
+        /// Lista de tarjetas asociadas a la cuenta.
+        /// </summary>
         public List<Card> Cards;
 
-        public List<Transaction> Moves;
+        /// <summary>
+        /// Lista de transacciones asociadas a la tarjeta.
+        /// </summary>
+        public List<Transaction> Transferences;
 
-        public string GetMovesMsg()
+        /// <summary>
+        /// Genera un mensaje con informacion minima de cada una de sus tarjetas.
+        /// </summary>
+        /// <returns>
+        /// Una cadena con los detalles de minimos de sus tarjetas.
+        /// </returns>
+        private string GetTransferencesMSG()
         {
             string msg = "";
-            foreach (Transaction transaction in Moves)
+            foreach (Transaction transaction in Transferences)
             {
                 if (transaction.PayeeAccountID == AccountID)
                 {
@@ -35,6 +62,12 @@ namespace TelegramBot.Library.BankSim
             return msg;
         }
 
+        /// <summary>
+        /// Genera un mensaje con informacion minima de cada una de sus tarjetas.
+        /// </summary>
+        /// <returns>
+        /// Una cadena con los detalles de minimos de sus tarjetas.
+        /// </returns>
         public string GetCardsListMsg()
         {
             string msg = $"Tarjetas de la cuenta {AccountID}\n\n";
@@ -47,15 +80,13 @@ namespace TelegramBot.Library.BankSim
             return msg;
         }
 
-        public string GetCardMsgByIndex(int index)
-        {
-            if (index < 1 || index > Cards.Count) 
-            {
-                return "Tarjeta no encontrada, intenta con otro indice\n";
-            }
-            return $"Tarjeta: **** **** **** {(int)(Cards[index-1].Number % 10000)} \n{Cards[index - 1].GetMovesMsg()}\n";
-        }
 
+        /// <summary>
+        /// Genera un mensaje con todos los movimientos de la cuenta.
+        /// </summary>
+        /// <returns>
+        /// Una cadena con los detalles de todas las transacciones de la cuenta.
+        /// </returns>
         public string GetAllAccountMovesMsg()
         {
             string msg = $"Account: {AccountID}    Balance: ${Balance} ({Currency.ToString()})\n\n";
@@ -64,17 +95,25 @@ namespace TelegramBot.Library.BankSim
                 msg += $"{card.GetMovesMsg()}\n";
             }
 
-            if (Moves != null && Moves.Count > 0)
+            if (Transferences != null && Transferences.Count > 0)
             {
                 msg += "Transferencias: \n";
-                msg += GetMovesMsg() + "\n";
+                msg += GetTransferencesMSG() + "\n";
             }
             
 
             return msg;
         }
 
-        public bool IsAnCardButton(string msg, out Card card)
+        /// <summary>
+        /// Verifica si el mensaje recive es un Identificador de alguna de las tarjetas del usuario
+        /// </summary>
+        /// <param name="msg">El mensaje recibido.</param>
+        /// <param name="card">Parametro de salida con la instancia de la tarjeta obtenida.</param>
+        /// <returns>
+        /// Un boolean que indica si el mensaje es un ID de alguna de las tarjetas del usuario o no
+        /// </returns>
+        public bool IsAnCardNumber(string msg, out Card card)
         {
             foreach (Card c in Cards)
             {
