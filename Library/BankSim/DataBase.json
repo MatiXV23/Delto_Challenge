@@ -1,0 +1,169 @@
+[
+  {
+    "Name": "Matias Perez",
+    "Username": "matias11",
+    "Password": "clave1234",
+    "Accounts": [
+      {
+        "Balance": 7800.0,
+        "AccountID": "matiasp2218340",
+        "Currency": 0,
+        "Cards": [
+          {
+            "AccountID": "matiasp2218340",
+            "Number": 4219200398571113,
+            "Moves": [
+              {
+                "PayerAccountID": "matiasp2218340",
+                "PayeeAccountID": "juanp221304",
+                "Import": 300.0,
+                "Date": "16/1/24",
+                "Currency": 0
+              },
+              {
+                "PayerAccountID": "pedror32018",
+                "PayeeAccountID": "matiasp2218340",
+                "Import": 150.0,
+                "Date": "22/1/24",
+                "Currency": 0
+              },
+              {
+                "PayerAccountID": "matiasp2218340",
+                "PayeeAccountID": "H&M5554422",
+                "Import": 300.0,
+                "Date": "9/2/24",
+                "Currency": 0
+              }
+            ]
+          },
+          {
+            "AccountID": "matiasp2218340",
+            "Number": 3003233298871116,
+            "Moves": [
+              {
+                "PayerAccountID": "matiasp2218340",
+                "PayeeAccountID": "clarap2245452",
+                "Import": 3000.0,
+                "Date": "9/2/24",
+                "Currency": 0
+              },
+              {
+                "PayerAccountID": "jorger43423",
+                "PayeeAccountID": "matiasp2218340",
+                "Import": 1500.0,
+                "Date": "9/2/24",
+                "Currency": 0
+              },
+              {
+                "PayerAccountID": "matiasp2218340",
+                "PayeeAccountID": "H&M5554422",
+                "Import": 600.0,
+                "Date": "12/2/24",
+                "Currency": 0
+              }
+            ]
+          }
+        ],
+        "Moves": [
+          {
+            "PayerAccountID": "matiasp2218340",
+            "PayeeAccountID": "clarap2245452",
+            "Import": 1000.0,
+            "Date": "9/1/24",
+            "Currency": 0
+          },
+          {
+            "PayerAccountID": "jorger43423",
+            "PayeeAccountID": "matiasp2218340",
+            "Import": 1200.0,
+            "Date": "9/2/24",
+            "Currency": 0
+          }
+        ]
+      },
+      {
+        "Balance": 78.0,
+        "AccountID": "matip24343132",
+        "Currency": 1,
+        "Cards": [
+          {
+            "AccountID": "matip24343132",
+            "Number": 4219200398571113,
+            "Moves": [
+              {
+                "PayerAccountID": "matip24343132",
+                "PayeeAccountID": "juanp221304",
+                "Import": 30.0,
+                "Date": "16/1/24",
+                "Currency": 1
+              },
+              {
+                "PayerAccountID": "pedror32018",
+                "PayeeAccountID": "matip24343132",
+                "Import": 15.0,
+                "Date": "22/1/24",
+                "Currency": 1
+              },
+              {
+                "PayerAccountID": "matip24343132",
+                "PayeeAccountID": "H&M5554422",
+                "Import": 30.0,
+                "Date": "9/2/24",
+                "Currency": 1
+              }
+            ]
+          },
+          {
+            "AccountID": "matip24343132",
+            "Number": 3003233298871116,
+            "Moves": [
+              {
+                "PayerAccountID": "matip24343132",
+                "PayeeAccountID": "clarap2245452",
+                "Import": 30.0,
+                "Date": "9/2/24",
+                "Currency": 1
+              },
+              {
+                "PayerAccountID": "jorger43423",
+                "PayeeAccountID": "matip24343132",
+                "Import": 15.0,
+                "Date": "9/2/24",
+                "Currency": 1
+              },
+              {
+                "PayerAccountID": "matip24343132",
+                "PayeeAccountID": "H&M5554422",
+                "Import": 600.0,
+                "Date": "12/2/24",
+                "Currency": 1
+              }
+            ]
+          }
+        ],
+        "Moves": [
+          {
+            "PayerAccountID": "matip24343132",
+            "PayeeAccountID": "clarap2245452",
+            "Import": 10.0,
+            "Date": "9/1/24",
+            "Currency": 1
+          },
+          {
+            "PayerAccountID": "jorger43423",
+            "PayeeAccountID": "matip24343132",
+            "Import": 12.0,
+            "Date": "9/2/24",
+            "Currency": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Julio Rodriguez",
+    "Username": "julio.rodriguez",
+    "Password": "clav232231",
+    "Accounts": null
+  }
+]
